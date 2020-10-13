@@ -1,0 +1,10 @@
+.popup__auth-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+.popup__auth-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

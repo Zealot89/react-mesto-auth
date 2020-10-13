@@ -1,0 +1,16 @@
+.elements__element {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 282px;
+  min-height: 361px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 4%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.elements__element:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.popup__input_auth {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: black;
+  color: white;
+}
+.popup__input_auth:focus {
+  outline: none;
+}

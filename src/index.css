@@ -1,0 +1,11 @@
+@import url("../src/vendor/normalize.css");
+@import url("../src/vendor/InterWeb/inter.css");
+/*@import url("../blocks/content/content.css");*/
+@import url("../src/blocks/elements/elements.css");
+@import url("../src/blocks/footer/footer.css");
+@import url("../src/blocks/header/header.css");
+@import url("../src/blocks/page/page.css");
+@import url("../src/blocks/popup/popup.css");
+@import url("../src/blocks/popup/__review/popup_review.css");
+@import url("../src/blocks/profile/profile.css");
+@import url("../src/blocks/popup/_active/popup_active.css");

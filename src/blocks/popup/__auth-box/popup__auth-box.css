@@ -1,0 +1,5 @@
+.popup__auth-box {
+  display: flex;
+  margin: 15px 0 42px;
+  color: #ffffff;
+}
