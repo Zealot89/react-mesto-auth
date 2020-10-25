@@ -3,7 +3,9 @@ class Api {
     this.baseUrl = options.baseUrl;
     this.token = options.headers.authorization;
   }
+  
   getInitialCards() {
+   
     return fetch(`${this.baseUrl}/cards`, {
       headers: {
         authorization: this.token,
@@ -15,6 +17,7 @@ class Api {
   }
 
   getUserData(func) {
+    
     return fetch(`${this.baseUrl}/users/me`, {
       headers: {
         authorization: this.token,
@@ -28,10 +31,11 @@ class Api {
   }
 
   saveUserData({ name, about }) {
+    console.log(this.token);
     return fetch(`${this.baseUrl}/users/me`, {
       method: "PATCH",
       headers: {
-        authorization: this.token,
+        authorization:`Bearer ${this.token}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -114,10 +118,11 @@ class Api {
 
 //Экземпляр класса Api
 const api = new Api({
-  baseUrl: "https://mesto.nomoreparties.co/v1/cohort-13",
+  baseUrl: "http://www.api.zealot.students.nomoreparties.co",
   headers: {
-    authorization: "a34a1e6b-d078-470d-87dd-2211c9e10f70",
+    "authorization": `Bearer ${localStorage.getItem('token')}`,
     "Content-Type": "application/json",
   },
+  
 });
 export default api;

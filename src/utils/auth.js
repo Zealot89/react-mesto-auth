@@ -1,4 +1,4 @@
-const BASE_URL = "https://auth.nomoreparties.co";
+const BASE_URL = "http://www.api.zealot.students.nomoreparties.co";
 
 export function register(email, password) {
   return fetch(`${BASE_URL}/signup`, {
@@ -21,10 +21,11 @@ export function authorization(email, password) {
     },
     body: JSON.stringify({ email, password }),
   })
-    .then((res) => {
-      if (res.ok) return res.json();
-      else return Promise.reject(res.statusText);
-    })
+  .then((res) => res.json())
+    //.then((res) => {
+    //  if (res.ok) return res.json();
+    //  else return Promise.reject(res.statusText);
+    //})
     .then((data) => {
       if (data.token) {
         console.log(data);

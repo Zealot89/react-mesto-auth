@@ -160,7 +160,7 @@ function App() {
           text: "Вы успешно зарегистрировались!",
           image: accessImage,
         });
-        history.push("/");
+        history.push("/sign-in");
       })
       .catch(() => {
         setInfoTooltipData({
